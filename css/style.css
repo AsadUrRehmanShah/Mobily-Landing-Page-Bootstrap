@@ -1,0 +1,142 @@
+/* *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web';
+}
+
+/* navbar-brand */
+
+.navbar-brand img {
+    width: 190px;
+    height: auto;
+}
+
+
+.pad {
+    padding-top: 139px;
+    padding-bottom: 150px;
+}
+
+.Hero-color {
+    background-color: #2C3E50;
+}
+
+.hero-right-image {
+    width: 100%;
+    max-width: 250px;
+}
+
+.btn-color {
+    background-color: #6DC24B;
+}
+
+.green-text {
+    color: #6DC24B;
+}
+
+.text-fontsize {
+    font-size: 18px;
+}
+
+
+/* accordion */
+
+.accordion-button:not(.collapsed) {
+    color: #000000;
+    background-color: #CCCCCC;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-button:not(.collapsed)::after {
+    content: "-";
+}
+
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "+";
+    background-image: none !important;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #EEEEEE;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+
+
+/* Dark mode & White mode */
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    transition-duration: 4s;
+  }
+.white-mode{
+    color: white;
+}
+
+
+/* Dark and white mode button */
+
+  .trigger{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 132px;
+    height: 32px;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .span-white{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: block;
+    height: 32px;
+    
+  }
+  .span-dark{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: block;
+    height: 32px;
+   
+  }
+  .translate{
+    transform: translateY(-32px);
+    
+  }
+  .transition{
+    transition: 0.3s;
+  }
+  .list-style{
+    list-style: none;
+    margin-left: -40px;
+    text-align: center;
+    font-size: 20px;
+   
+  }
